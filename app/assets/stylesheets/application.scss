@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+
+/*==============================================================================
+init_style
+============================================================================= */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ul, li { list-style: none!important; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; color: #fff; }
+img { vertical-align: bottom; max-width :100%; }
+table { border-collapse: collapse; border-spacing: 0 }
+.fixed { position:fixed; left:0; top:0; z-index:9999; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.flex { display: flex; display: -webkit-flex; }
+.align-center{ align-items: center; }
+#wrapper { position: relative; margin: 0 auto; overflow: hidden;}
+.inner { width:1000px; margin: 0 auto; padding: 0; position:relative; }
+.fixed { position:fixed; left:0; top:0; z-index:9999; }
+div,p,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,form,input,button,textarea,table,tr,th,td,article,aside,header,footer,section,nav{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+  background-color: #F1F5F7;
+  color: #000;
+  padding-top: 65px;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+h1,h2,h3,h4,h5,h6 { font-weight:bold; line-height: 1.8; letter-spacing: .06rem; text-align: center;overflow-wrap: break-word;}
+.align-center {align-items:center;}
+
+/*==============================================================================
+ 共通パーツ
+============================================================================= */
+#header {
+  padding: 15px 0;
+  background-color: #FFF;
+  color: #000;
+  font-size: 14px;
+  // font-weight: bold;
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .logo {
+    margin: auto;
+  }
+  #logo {
+    color: #444;
+    padding: 9px 30px;
+    background: #F1F5F7;
+    text-decoration: none;
+    // font-size: 25px;
+    // text-shadow: 1.5px 1.5px #444;
+    border-radius: 20px;
+  }
+  .login_out { color: white; background-color: #666;}
+  .login_out:hover {
+    color: white;
+    background-color: #444;
+  }
+}
+/*==============================================================================
+footer
+============================================================================= */
+.copyright {
+  background: #F1F5F7;
+  // background: #222;
+  padding: 20px 0;
+  
+  .copyright-txt {
+    color: #444;
+    font-size: 15px;
+    text-align: center;
+  }
+ } 

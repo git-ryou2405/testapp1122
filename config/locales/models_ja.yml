@@ -1,0 +1,12 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+    attributes:
+      user:
+        name: 名前
+        account_name: アカウントID
+        email: メールアドレス
+        is_admin: 管理人
+        password: パスワード
+        balance: 残高

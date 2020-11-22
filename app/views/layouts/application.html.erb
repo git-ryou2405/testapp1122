@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rails6BootstrapEnviroment</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <!-- webpacker -->
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <!-- assets -->
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/5f392e2ea2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <%= render 'layouts/header' %>
+
+  <!-- flash -->
+  <% if flash[:notice] %>
+    <div class="flash"><%= flash[:notice] %></div>
+  <% end %>
+
+  <%= yield %>
+
+  <!-- footer -->
+  <%= render 'layouts/footer' %>
+</body>
+
+</html>
